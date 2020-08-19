@@ -12,15 +12,6 @@ class App extends Component {
     ]
   };
 
-  switchUserName = (nickname) => {
-    this.setState({
-      users: [
-        {userName: 'Carluta'},
-        {userName: 'Grisinuta'},
-        {userName: 'Max'}
-      ]
-    })
-  }
   render() {
     return (
       <div className="App">
