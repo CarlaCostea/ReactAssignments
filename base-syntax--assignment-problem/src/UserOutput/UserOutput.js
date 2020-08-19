@@ -5,10 +5,10 @@
 
 import React from 'react'
 
-const userOutput = () => {
+const userOutput = (props) => {
     return (
         <div>
-            <p>First paragraph</p>
+            <p>First paragraph {props.userName}</p>
             <p>Second paragraph</p>
         </div>
     )
