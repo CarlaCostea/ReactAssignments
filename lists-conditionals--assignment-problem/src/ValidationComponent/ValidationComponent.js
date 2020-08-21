@@ -5,13 +5,27 @@
 import React from 'react'
 
 const validationCompoment = (props) => {
+    let validationMessage = 'Text long enough';
+
+    if (props.inputLength <+ 8) {
+        validationMessage = 'Text too short';
+    }
+
     return (
         <div>
-            {
-                (props.inputLength > 8) ? <p>Text long enough</p> : <p>Text too short</p>
-            }
+                <p>{validationMessage}</p>
         </div>
     )
 }
+
+// const validationCompoment = (props) => {
+//     return (
+//         <div>
+//             {
+//                 (props.inputLength > 8) ? <p>Text long enough</p> : <p>Text too short</p>
+//             }
+//         </div>
+//     )
+// }
 
 export default validationCompoment;
